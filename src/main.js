@@ -38,3 +38,14 @@ if (product2) {
 } else {
   console.info("Product 2 not found.");
 }
+
+// Hands-On 2
+// Original
+// const title = document.querySelector("main .card .card-title");
+
+// Refactor #1 – Using what's provided
+// const title = document.querySelector("[data-product-id='1'] > .card-title");
+
+// Refactor #2 – Adding my own data-* attribute
+const title = document.querySelector("[data-title='a']");
+console.info("Title:", title);
