@@ -21,5 +21,9 @@ document.querySelectorAll('a[href^="/"]').forEach((link) => {
 });
 
 // 4. Select all required inputs and add a yellow outline (style.outline = "2px solid gold").
+document.querySelectorAll("[required]").forEach((reqInput) => {
+  reqInput.style.outline = "2px solid gold";
+});
+
 // Select all .card elements, loop through them, and add a data-viewed="true" attribute to each.
 // Select the product with data-product-id="2" and change its price to "$24.99".
