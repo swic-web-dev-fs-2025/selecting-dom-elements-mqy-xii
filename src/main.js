@@ -14,7 +14,12 @@ console.info(header);
 const navLinks = document.querySelectorAll("nav > a");
 console.info(`# of nav links: ${navLinks.length}`);
 
-// Select internal links (those starting with /) and append " [internal]" to their text.
-// Select all required inputs and add a yellow outline (style.outline = "2px solid gold").
+// 3. Select internal links (those starting with /) and append " [internal]" to their text.
+// Warp assisted – .querySelectorAll(<a> tags starting with (^=) "/", and then appending "[internal]" for each match)
+document.querySelectorAll('a[href^="/"]').forEach((link) => {
+  link.textContent += " [internal]";
+});
+
+// 4. Select all required inputs and add a yellow outline (style.outline = "2px solid gold").
 // Select all .card elements, loop through them, and add a data-viewed="true" attribute to each.
 // Select the product with data-product-id="2" and change its price to "$24.99".
