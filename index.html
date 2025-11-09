@@ -1,13 +1,25 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla DOM</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-</html>
+<header id="main-header">
+  <h1>My Site</h1>
+  <nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="https://external.com">External</a>
+  </nav>
+</header>
+
+<main>
+  <form data-form-type="login">
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required />
+    <button type="submit" class="btn primary">Log In</button>
+  </form>
+
+  <div class="card" data-product-id="1">
+    <h3 class="card-title">Product A</h3>
+    <p class="price">$19.99</p>
+  </div>
+  <div class="card" data-product-id="2">
+    <h3 class="card-title">Product B</h3>
+    <p class="price">$29.99</p>
+  </div>
+</main>
