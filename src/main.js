@@ -33,4 +33,8 @@ document.querySelectorAll(".card").forEach((card) => {
 // 6. Select the product with data-product-id="2" and change its price to "$24.99".
 // I was super close to getting this one on my own, but Warp helped me realize I should use querySelector twice.
 const product2 = document.querySelector("[data-product-id='2']");
-product2.querySelector(".price").textContent = "$24.99";
+if (product2) {
+  product2.querySelector(".price").textContent = "$24.99";
+} else {
+  console.info("Product 2 not found.");
+}
