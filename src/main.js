@@ -25,5 +25,9 @@ document.querySelectorAll("[required]").forEach((reqInput) => {
   reqInput.style.outline = "2px solid gold";
 });
 
-// Select all .card elements, loop through them, and add a data-viewed="true" attribute to each.
+// 5. Select all .card elements, loop through them, and add a data-viewed="true" attribute to each.
+document.querySelectorAll(".card").forEach((card) => {
+  card.setAttribute("data-viewed", "true");
+});
+
 // Select the product with data-product-id="2" and change its price to "$24.99".
